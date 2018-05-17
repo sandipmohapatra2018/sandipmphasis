@@ -1,0 +1,153 @@
+1)class contain variables and methods.
+2)static variable,static methods,static block.
+we can access them without creating an object.
+static block execute before the main method.
+3)final is a key word.we can declare variables as final,methods as final,we can declare class  as final.we have to assign the final variable.the final class cannot be inherited.
+final method cannot be overiding.
+
+------------------------------------------------------------------------------------------------
+inhereritance
+------------------------
+1)reusable of exixting code.
+2)parent class properties are used by the child class.
+3)we create object of child class and can access the parent and child class.
+4)we use 2 keywords extends(class),super(variables,methods)
+---------------------------------------------------------------------------------------------------
+access specifier
+----------------------------
+1)private :- if we declare variable,method as private we can access it within the class only.
+2)public :-if we declare variable,method as public we can access it within the class,outside the class and out side the package.
+
+3)protected :- if we declare variable,method as protected we can access it within the class and within the child class.
+
+4)default :-if we declare variable,method as default then we can access it within the class,outside the class but not out side the package
+
+ ----------------------------------------------------------------------
+
+
+function overloading :-
+If the function has the same name but different datatype the return type and parameter then it is known as function overloading.
+same data if we want to use the parameters should be different. 
+example:-
+int sum(int a,int b);
+int sum(int a,int b,int c);
+float sum(float a,float b);
+-------------------------------------------------------------------------------------------------
+constructor ()
+-------------------------------
+1)it is a function which has the same name as that of the class name.
+2)There are 2 types of constructor 1)default 2)parameterized 
+3)A constructor is exceuted when an object is created for a class.
+4)if we use more than one constructor in a class we call it as constructor overloading.
+5)a constructor doesnot have any return type nor it return any value.
+
+-----------------------------------------------------------------------------------------
+Abstract class and abstract method
+-----------------------------------------------------------
+Abstract class are those which contain abstract methods as well as concrete method.
+We cannot create object(instanciate) an abstract class.
+we have to extends it or inherite it to the child class and override its abstract methods in the child class.
+we use the keyword abstract for abstract class and abstract method.
+Abstract methods are those which donot contain any body.
+It is an incomplete class.
+--------------------------------------------------------------------------------
+example :-
+abstract class student
+{
+abstract void inputStudentdetails();
+abstract void inputStudentMarks();
+void studentClass()
+{
+System.out.println("He is student of class X");
+}
+}
+
+
+------------------------------------------------------------------------------
+interface :-
+--------------------
+1)it is similar to abstract class but it doesnot contain concrete methods.
+2)java doesnot support multiple inheritance but by interface we can do multiple inheritance.
+3)The override methods should have public access specifier.
+-----------------------------------
+interface first
+{
+void display();
+}
+interface second
+{
+void display1();
+}
+class main1 implements first,second
+{
+public void display()
+{}
+public void display1()
+{}
+main()
+{}
+}
+-------------------------------------------------------
+Constructor :- constructors are used to assign the values.
+we use constructors to assign the value because constructor execute first when an object is created for a class.
+
+ * first the parent class constructor will execute than the child class constructor will execute.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

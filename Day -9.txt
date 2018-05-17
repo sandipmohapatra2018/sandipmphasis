@@ -1,0 +1,77 @@
+CORE  JAVA
+--------------------------
+1)Java is simple,object Oriented,Portable,platform independent,secured,dynamic,robust,multithreaded,distributed.
+2)In java we have constructor but no destructor.There is automatic garbage collection.
+
+3)java is simple because we don't have pointer concept,operator over loading.Java doesn't support multiple inheritance.
+
+4)Java is purely object oriented because every program starts with class.
+The basic concept of OOPS (object oriented programings ) are:-
+1)class 2)object 3)Inheritance 4)Polymorphism 5)Abstraction 6)Encapsulation
+
+5)Java is robust/strong because it has strong memory management,automatic garbage collection.
+
+6)Java is multithreaded because it supports multiple task to be done as the same time.
+7)Java is distributed because in java we can develop distributed application for remote server and client.
+8)In java we can develop web application,mobile application,standalone application.
+9)In jave we have the concept of Exception Handing.
+ 
+
+----------------------------------------------------------------------------------
+class :- a class is called as a factory of object.It is also a blue print of an object.
+A class contain variables and methods.It is similar to structure in c.
+
+Object :- An object is an referance pointer to the class.With object we can access variables and methods of a class.
+
+Inheritance :-
+It is the property by which devlopers use the existing code and add new features to it.
+java support single inheritance.
+
+Polymorphism:- There are 2 types of polymorphism.
+
+1) runtime polymorphism(function overriding)
+2)compile time polymorphism(function overloading)
+
+Abstraction:-Hiding the complexity and displaying the simplicity . 
+
+Encapsulation :-Protecting of data by using access specifiers.
+------------------------------------------------------------------------------------------------
+Data types:-
+ ----------------------
+primative datatype
+------------------------------
+1)byte - 1 byte
+2)short - 2 bytes
+3)int -  4 bytes
+4)long - 8 bytes
+5)float - 4 bytes
+6)double - 8 bytes
+7)char - 2 bytes
+8)boolean - 1 bit
+-------------------------------------
+derived datatype
+-------------------------------------
+String 
+Array
+class
+----------------------------------------
+Operators
+-------------------
+1)unary :- i++,i--
+
+2)binary :-
+i)arithmatic :-+,-,*,/,mod
+ii)comparative :- <,>,<=,>= ,==,!=
+iii)logical :-&& ,||
+iv)bitwise :- >>,<<,NOR,&,^
+
+3)ternary :- ?,:
+-------------------------------------------------------------
+java is case sensitive.
+Class name are in Capital.
+function are camel case .example:- toUpper()
+key words are small.
+-----------------------------------------------------------------------------------------------
+
+
+  
