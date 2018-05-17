@@ -1,0 +1,24 @@
+<html>
+<body bgcolor=cyan>
+<h1><center>Student Registration Page</center></h1><hr><hr>
+<form action="second.jsp" method=get>
+<table>
+<tr><td>Enter your name<td><input type=text name=t1 size=20></tr>
+<tr><td>Enter your address<td><input type=text name=t2 size=20></tr>
+<tr><td>Enter your phone no<td><input type=text name=t3 size=20></tr>
+<tr><td>Enter your email<td><input type=text name=t4 size=20></tr>
+<tr><td><td><input type=submit value=submit></tr>
+</table>
+</form>
+</body>
+</html>
+-------------------------------
+<% String a=request.getParameter("t1");
+String b=request.getParameter("t2");
+String c=request.getParameter("t3");
+String d=request.getParameter("t4");%>
+<%out.println(" the name is "+a);
+out.println("the address is "+b);
+out.println("the email is "+c);
+out.println("the phone is "+d);%>
+--------------------------------------------------
