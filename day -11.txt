@@ -92,8 +92,167 @@ Constructor :- constructors are used to assign the values.
 we use constructors to assign the value because constructor execute first when an object is created for a class.
 
  * first the parent class constructor will execute than the child class constructor will execute.
+--------------------------------------------------------------
+casting :-
+1)implicit casting
+2)explicit casting
+ -----------------------------------------------
+String :-
+1)String is a class in java.lang package
+2)In java all string are also considered as datatype
+3)String object is Immutable(cannot be changed)
+4)When we assign a value it create a new object and the value remains in memory.
+Example :- String s1=“hello”;
+ String s2=new String(“hello”);
+Method :- length(),isEmpty(),charAt(),equals(),startWith(),endsWith(),indexOf(),lastIndexOf(),toUpperCase(),
+toLowerCase()
+-----------------------------------------------------------------------------------------
+String Buffer:-
+1)It is a peer class of string and provides all functions of string.
+2)It is mutable (can be modified) and expanded dynamically.
+3)It is synchronized
+Ex:-1) StringBuffer b=new StringBuffer(“hello”);
+We pass “hello” to StringBuffer object “b”
+2)StringBuffer b=new StringBuffer(50);
+We can store 50 or more character .It is mutable so it expands dynamically
+3)StringBuffer b=new StringBuffer()
+StringBuffer object b is created with default capacity 16 character.
+4)Methods :- append(),insert(),delete(),reverse()
+-----------------------------------------------------------------------------------------
+String Builder :-
+1)It is same as String Buffer
+2)String Builder is not synchronized
+3) String Buffer class takes more time to execute than StringBuilder
+----------------------------------------------------------------------------------
+String s1=”apple”;
+String s1=”grapes”;
+Now the reference s1 contain new data the old object data is lost.
+It is known as unreferenced object and garbage collector will remove it from memory.
 
- 
+--------------------------------------------------------
+Wraper class
+-------------------------
+All datatype in java are also classes.
+1)byte   ---Byte
+2)short  ---Short
+3)int      ---Integer
+4)long   ---Long
+5)float   ---Float
+6)double ---Double
+7)char     ---Character
+8)String
+These all belongs to lang package.
+-------------------------------------------------------------------
+javap java.lang.Float
+---------------------------------------------------------------------------------
+Exception Handling
+---------------------------------------------------------------------------------
+There are 3 types of error
+1)compile time error
+2)logical error
+3)runtime error.
+Exception handling is use to handle the runtime error and allow the program to flow till the end of the program and display some error message.
+In java there are 5 key words used to handle the error.
+1)try 2)catch 3)finally 4)throws 5)throw
+-------------------------------------------------------------------------------
+exception is divide into 3 parts
+1)checked exception :- SqlException,ServletException,InterruptedException
+2)unchecked exception :-Arithmatic Exception,
+ArrayIndexOutOfBound Exception,NumberFormat Exception
+3)error :- HD failure,stack overflow.
+-----------------------------------------------------------------------------------------
+1)try-catch
+in this if the try block is success then the catch block is success.
+if try block is not success(no error) then the catch block is also not success.
+-----------------------------------------------------------------------------------------
+2)try-finally
+in this the try block is success or not it does not matter the finally block will definatly exceute.
+-----------------------------------------------------------------------------------------
+Throws :- It is mainly used to handle checked exception.if we handle the exception then only it will allow the control to flow.we have write with main method.
+-------------------------------------------------------------------------------
+Throw :- it is used for user defined exception
+------------------------------------------------------------------------------------
+Collection Framework
+------------------------------------------------------------------------------------
+Array :- collection of similar elements or data type.it has a fixed size.
+example :- int a[]=new a[5];
+
+collection is a collection of objects.
+it can expand dynamically.The memory size will increase. On delete the memory size will decrease .
+----------------------------------------------------------------------------------------
+Java Collection framework provides many interfaces (Set, List,Map etc.) and classes (ArrayList, Vector, LinkedList,HashSet,LinkedHashSet, TreeSet etc).
+
+1)set(interface):-(classes)TreeSet,HashSet,LinkedHashSet
+2)list (interface):-(classes)LinkedList,ArrayList,Vector,Stack
+3)map(interface):-(classes)HashTable,HashMap
+
+1.set(interface)->
+Does not allow duplicate value.
+HashSet,LinkedHashSet,TreeSet(classes).
+a.Hashset->Display elements in random order.
+b.LinkedHashSet ->it displays in the same order.
+c.TreeSet ->It display in the sorted order.
+
+2.List->
+It allows duplicate value.
+Stack,ArrayList,Linkedlist,Vector
+Stack:FILO .the last element will be arr[0].
+Linked List:it displays in same order.
+-----------------------------
+list iterator is used to view data forward and backward
+-----------------------------------------------------------------------------------------
+3.Map->
+HashMap:-we enter Key and value pair
+HashTable:-we enter Key and value pair
+
+*The HashMap class is roughly equivalent to Hashtable, except that it is unsynchronized and permits nulls. 
+(HashMap allows null values as key and value whereas Hashtable doesnt allow). 
+HashMap does not guarantee that the order of the map will remain constant every time. 
+HashMap is unsynchronized and Hashtable is synchronized.
+
+Key-value
+key should be unique- but value can be duplicate
+----------------------------------------------------------------------------------------- note:Iterator,ListIterator and enumeration are interfaces which contains the set of methods. with the help of these methods we can retrieve objects from the collection of classes.
+-------------------------------------
+Iterator:three methods:hasNext();next();remove();
+----------------------------------------------------------------------------------------
+Vector is synchronized whereas arraylist is not.
+---------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
