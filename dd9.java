@@ -1,4 +1,4 @@
-class a implements Runnable
+class dd9 implements Runnable
 {
 synchronized public void run()
 	{
@@ -33,7 +33,7 @@ synchronized public void run()
 	}
     public static void main(String args[]) throws Exception
 { 
-     a obj=new a();
+     dd9 obj=new dd9();
   Thread t1=new Thread(obj,"raj");
  Thread t2=new Thread(obj,"seeta");
  Thread t3=new Thread(obj,"geeta");
