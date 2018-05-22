@@ -169,5 +169,5 @@ fin=new FileInputStream(args[0]);
 ((char)c));
 }
 
-ans:- 
+ans:- TypeCast Error
 --------------------------------------------------------------------------
