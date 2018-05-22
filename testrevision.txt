@@ -70,7 +70,7 @@ public void run()
 {}
 }
 ------------------------------------------------------------------
-14)interface cannot be nested
+14)interface can be nested
 ----------------------------------------------------------------------------------
 15)int a[5] ;
 system.in.read(a[1])
@@ -132,7 +132,7 @@ System.out.println(b);
 
 ans:- complile time error
 -----------------------------------------------
-25) interface methods can be declare as final and static
+25) interface methods can be declare as final,public and static
 --------------------------------------------------------------------------
 26)a class can implements more than one interface
 -----------------------------------------------------------------------------
