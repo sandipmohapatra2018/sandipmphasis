@@ -1,0 +1,63 @@
+import java.io.*;
+import java.sql.*;
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+@WebServlet("/second")
+public class second extends GenericServlet
+{
+	public void init()
+	{System.out.println("init");}
+	@Override
+	public void service(ServletRequest req, ServletResponse res)
+			throws ServletException, IOException 
+			{
+				PrintWriter pw=res.getWriter();
+		res.setContentType("text/html");
+				String a=req.getParameter("t1");
+		String b=req.getParameter("t2");
+		String c=req.getParameter("t3");
+		String d=req.getParameter("t4");
+		pw.print("<body bgcolor=cyan>");
+		pw.print("The name is "+a);
+		pw.print("<br>");
+		pw.print("The email is "+b);
+		pw.print("<br>");
+		pw.print("The address is "+c);
+		pw.print("<br>");
+		pw.print("The phoneno is "+d);
+			try
+			{
+				Class.forName("oracle.jdbc.driver.OracleDriver"); 
+				Connection con=DriverManager.getConnection
+						("jdbc:oracle:thin:@localhost:1521:XE","system","1234");
+				PreparedStatement st=con.prepareStatement
+						("insert into Mphasisemps values(?,?,?,?)");
+				st.setString(1,a); st.setString(2,b); st.setString(3,c); st.setString(4,d);  
+			st.execute();
+			pw.print("row inserted");
+			}
+			catch(Exception ae)
+			{
+				ae.printStackTrace();
+			}			}
+		public void destroy()
+	{System.out.println("destoy");	}}
+
+
+------------------------------------------------------------------------------
+<html>
+<body bgcolor=cyan>
+<form action=second> 
+<h1><center>Registration Page</center></h1><hr>
+<table>
+<tr><td>Enter your name<td><input type=text name=t1 size=20 required></tr>
+<tr><td>Enter your eamil<td><input type=text name=t2 size=20 required></tr>
+<tr><td>Enter your address<td><input type=text name=t3 size=20 required></tr>
+<tr><td>Enter your Phoneno<td><input type=text name=t4 size=20 required></tr>
+<tr><td><td><input type=submit value=submit></tr>
+
+</table>
+</form>
+</body>
+</html>
+-------------------------
