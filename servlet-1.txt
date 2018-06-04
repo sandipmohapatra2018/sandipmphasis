@@ -61,3 +61,17 @@ public class second extends GenericServlet
 </body>
 </html>
 -------------------------
+<%String a=request.getParameter("t1");
+String b=request.getParameter("t2");
+String c=request.getParameter("t3");
+String d=request.getParameter("t4");%>
+
+<% out.println("the name is "+a);
+out.println("<br>");
+out.println("the email is "+b);
+out.println("<br>");
+out.println("the address is "+c);
+out.println("<br>");
+out.println("the phone no is "+d);%>
+
+------------------------------------------
