@@ -106,3 +106,61 @@ ans)contentType
 
 29)Which of the following step is taken by JSP container during Compilation phase?
 ans)Compiling the servlet.
+
+<--------------------------------------Test----------------------------------------->
+1)usebean  :-
+ans) id,class
+
+2)jsp a=10,a=20,b=30
+(a*b)
+ans)300
+
+3)Which method is used to delete a session?
+ans) public void invalidate()
+
+4)The welcome-file-list element of 
+ans)web-app
+
+5)import date in jsp 
+The current date is <%= new java.util.Date() %>
+ans)date will be shown
+
+6)setProperty attributes are
+ans)name,property
+
+7)getAttribute are required by
+ans)non of the above
+
+8)form elements are read by 
+ans)req.getParameter();
+
+9)maximum session utilization 
+ans)getMaxInactiveInterval()
+
+10)processing request in jsp
+ans)_jspService()
+
+11)servlet lifecycle instance are managed by 
+ans)WebContainer
+
+12)ans)charli chaplin chaplin
+
+13)state of the user that are managed on server side
+ans)session
+
+14)response and request in a webapplication is controlled by 
+ans)WebContainer
+
+15)ServletConfig reads data from?
+ans)web.xml
+
+16)getProperty attributes are
+ans)name,property
+
+17)Iteration 
+ans)<c:forEach>
+
+18)HttpSession session=req.getSession("");
+
+
+ 
