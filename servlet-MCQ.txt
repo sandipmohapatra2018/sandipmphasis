@@ -162,5 +162,18 @@ ans)<c:forEach>
 
 18)HttpSession session=req.getSession("");
 
+19)GenericServlet 
+
+20)tomcat error
+
+21)5 6 7 8 9 10 
+begin="5" and end="10"
+
+22)start="0" stop="0"
+abc
+ans)2
+
+23)
+
 
  
