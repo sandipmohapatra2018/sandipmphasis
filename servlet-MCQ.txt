@@ -173,7 +173,24 @@ begin="5" and end="10"
 abc
 ans)2
 
-23)
+23)<%=request.getContentType() %>
+ans)null
+
+or
+
+<%=getContentType() %>
+ans)compile error
 
 
+24)<jsp:setProperty name="bean" property="username" value="sandip"/>  
  
+25)<%@ page info="this is a welcome page"%>
+
+26)jsp comment
+
+<%--    --%>
+
+27)RequestDispatcher rd=req.getRequestDispatcher("/customer/showcar");
+	rd.forward(req, res);
+
+
