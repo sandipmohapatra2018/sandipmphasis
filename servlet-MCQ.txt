@@ -194,3 +194,7 @@ ans)compile error
 	rd.forward(req, res);
 
 
+28)which method is used to get cookies added to reponse object.
+ans)getCookies();
+
+
