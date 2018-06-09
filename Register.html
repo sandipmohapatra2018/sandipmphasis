@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+
+function alpha(e) {
+     var k;
+     document.all ? k = e.keyCode : k = e.which;
+     return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 46);
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Package</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--Header Background Part Starts -->
+<div id="header-bg">
+	<!--Header Contant Part Starts -->
+	<div id="header">
+	<a href="index.html"><img src="images/l.jpg" alt="Package" width="205" height="62" border="0" class="logo" title="Package" /></a>
+		<!--Login Background Starts -->
+		<!--<div id="login-bg">-->
+			<!--Login Area Starts -->
+			<div id="login-area">
+
+
+
+<script>
+function fun()
+{
+var t1=f1.t1.value;
+var t2=f1.t2.value;
+var t3=f1.t3.value;
+var t4=f1.t4.value;
+var t5=f1.t5.value;
+var t6=f1.t6.value;
+var t7=f1.t7.value;
+var t8=f1.t8.value;
+
+ if(t1=="")
+{
+alert("Please enter user name");
+f1.t1.focus();
+}
+
+else if(t2.length!=8)
+{
+alert("Please enter password 8 character long");
+f1.t2.focus();
+}
+
+else if(t3.length!=10)
+{
+alert("Please give 10 digits only");
+f1.t3.focus();
+}
+
+else if(t4.length!=16)
+{
+alert("Please give proper emailID");
+f1.t4.focus();
+}
+
+else if(t5=="")
+{
+alert("Please enter address");
+f1.t5.focus();
+}
+
+else if(t6=="")
+{
+alert("Please enter location");
+f1.t6.focus();
+}
+
+else if(t7=="")
+{
+alert("Please enter state");
+f1.t7.focus();
+}
+
+else if(t8=="")
+{
+alert("Please enter city");
+f1.t8.focus();
+}
+  
+else
+{
+f1.submit();
+}
+}
+</script>
+
+				<form action="login" method="get">
+					<!--<table><tr>
+					<td><label>Login:</label>
+					<td><input type="text" name="username" value="" />
+					<td><input type="password" name="pass" value="" />
+					<td><input type="submit" value="LOGIN"></tr>
+					<br class="spacer" />
+					</table>-->
+</form>
+				
+			</div>
+			<!--Login Area Ends -->
+		</div>
+		<!--Login Background Ends -->
+		<br class="spacer" />
+	</div>
+	<!--Header Contant Part Ends -->
+</div>
+<!--Header Background Part Ends -->
+<!--Navigation Background Part Starts -->
+<div id="navigation-bg">
+	<!--Navigation Part Starts -->
+	<div id="navigation">
+		<ul class="mainMenu">
+			<li><a href="first.html" class="selectMenu" title="Home">Home</a></li>
+			<li><a href="Register.html" title="Register">Register</a></li>
+			
+		</ul>
+		
+		<br class="spacer" />
+		<ul class="subNav">
+			
+		</ul>
+		<br class="spacer" />
+	</div>
+	<!--Navigation Part Ends -->
+</div>
+<!--Navigation Background Part Ends -->
+<!--Our Company Bacground Part Starts -->
+<div id="ourCompany-bg">
+	<!--Our Company Part Starts -->
+	<div id="ourCompany-part">
+		<h2 class="ourCompany-hdr">Customer Registeration</h2>
+		<!--Our Company Left Part Starts -->
+		<div id="ourCompany-leftPart">
+<form action="second" method="get" name=f1>
+			<h2 class="faq-Hdr">Enter Person Details</h2>
+			<ul class="ourCompany-list"><b>
+				<li><label>User Name:</label><input type="text" name="t1" onkeypress="return alpha(event)" id="username" /></li><br>
+				<li><label> Password :</label><input type="password" name="t2" id="username" /></li><br>
+				
+			</ul>
+			<h2 class="moreIdeas-Hdr">Enter Person Details</h2>
+			<ul class="ourCompany-list noBottomPadding">
+				<li><label>Mobile no:</label><input type="text" name="t3" id="username" /></li><br>
+				<li><label>Email Id@:</label><input type="text" name="t4" id="username" /></li><br>
+				
+			</ul>
+		</div>
+		<!--Our Company Left Part Ends -->
+		<!--Our Company Right Part Starts -->
+		<div id="ourCompany-rightPart">
+			<h2 class="moreInfo-Hdr">Enter Person Details</h2>
+			<ul class="ourCompany-list noBottomPadding">
+			<li><label> address:</label><input type="text" name="t5" id="username" /></li><br>
+			<li><label>Location:</label><input type="text" name="t6" id="username" /></li><br> <br />
+			</ul>
+			</p>
+			<h2 class="searchUrl-Hdr">Enter Location Details</h2>
+			<ul class="ourCompany-list noBottomPadding">
+				<li><label>State:</label><input type="text" name="t7" id="username" /></li><br>
+				<li><label> city:</label><input type="text" name="t8" id="username" /></li><br>
+					<center><input type=button value=submit onClick="fun()"/><br>
+				
+			</ul>
+		</div>
+		<!--Our Company Right Part Ends -->
+		<br class="spacer" />
+	</div>
+	<!--Our Company Part Ends -->
+</div>
+
+</div>
+</form>
+</body>
+</html>
