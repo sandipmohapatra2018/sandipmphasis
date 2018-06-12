@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { Button } from 'selenium-webdriver';
+@Component({
+  selector: 'my-app',
+    template:'<div>Hello my name is {{name}}<Button (click)="sayName()" >say my name</Button> </div>'
+})
+export class AppComponent 
+ {
+   name:String;
+   constructor()
+   {
+    this.name = 'sandip kumar';
+   }
+   sayName()
+   {     console.log("my name is ",this.name);   }  }
