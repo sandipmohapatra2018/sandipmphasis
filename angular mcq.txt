@@ -1,3 +1,57 @@
+Angular.js 2
+-------------------------
+1)Dependency Injection :- it is design pattern in which the components are given there dependencies at runtime.instead of hard coding them. 
+
+2)it split the application into MVC artitecture.It is view .
+
+3)it follows 2 ways data binding.
+
+4)angularjs expression are used to bind application data to Html.
+{{5+5}} or {{firstname+" "+lastname}} 
+
+5)it facilitaes you to extend HTML with new attributes called directive
+example :- ng-app,ng-init,ng-model,ng-repeat,ng-if,ng-show,ng-bind,ng-blur,ng-disabled,ng-for,ng-root,ng-form.
+
+6)ng-controller (version-1) is used as a function and we have $scope as a parameter .
+
+7)in angularjs a module defines an application.it contains parts like
+controller,services,filter,directives.
+
+8)filter in angularjs version1 are 1)currency 2)Date 3)Json 4)Limit 5)Lowercase 6)Number 7)Orderby 8)Uppercase
+in angular2 we can have customized filter.
+
+9)it is used to develop single page application.
+
+10)service are objects that can be used to store and share data across the application.
+
+example :- 
+1)$http :- request the server and your application will handle the response. 
+2)$location :- tells the location of web page
+3)$timeout :- delay the display.
+4)$interval :- display after a time interval again and again
+5)$scope :- to pass parameter
+
+
+11)we have some angular events like
+1)ng-blur 2)ng-change 3)ng-click 4)ng-copy 5)ng-keypress 6)ng-keyup 7)ng-mousedown  8)ng-mousemove 9)ng-paste 10)ng-mouseenter
+
+12)it providing routing 
+13)it provides validation 
+-----------------------------------------------------------------------------------------
+    
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
 1)Which of the following is true about ng-init directive?	
 ng-init directive initializes an AngularJS Application data.	
 ng-init directive is used to put values to the variables to be used in the application.	
