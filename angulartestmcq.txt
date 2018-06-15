@@ -11,7 +11,7 @@ ans) *ngFor
 ans) synchronization between the model and the view
 
 5. if we have a factory in angular 1 which will bw created in angular 2
-ans) 
+ans) provider with service
 
 6. cotroller in angular 1 is impleneted as
 ans) component
@@ -20,7 +20,7 @@ ans) component
 ans)  forms module
 
 8. The . . . . . . . . . . directive substitutes the normal href property and makes it easier to work with route links 
-ans routerlink
+ans) routerlink
 
 9.A . . . . . . is a way to do some meta-programming.
 ans) decorator
@@ -29,10 +29,10 @@ ans) decorator
 ans) maping key value pair and sent them as response
 
 11. which is used to implement asynchronous patterns or works
-ans) 
+ans) rxjs
 
 12. a ES2015 module is
-ans)
+ans)a file with atleast one export or import. 
 
 13.how image.url is converted into components image.url property
 ans)  <img [src]="image.url">
@@ -88,3 +88,7 @@ ans)templateUrl
 
 30.what define about lifecycle hook/ use of lifecycle hook
 ans)component perform operation on DOM object
+
+31)main building block of angular2
+ans)component
+
