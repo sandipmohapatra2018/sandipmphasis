@@ -8,7 +8,7 @@ ans) navigation
 ans) *ngFor
 
 4. purpose of binding
-ans) 
+ans) synchronization between the model and the view
 
 5. if we have a factory in angular 1 which will bw created in angular 2
 ans) 
@@ -75,7 +75,7 @@ ans)declaring child component in the ngModule
 ans)template
 
 26.how to get the values back from observables of a component
-ans)guard
+ans)subscribe
 
 27. application module is decorated by
 ans)meta-data
