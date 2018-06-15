@@ -38,22 +38,22 @@ ans)a file with atleast one export or import.
 ans)  <img [src]="image.url">
 
 14.when a component loaded up front we call it as
-ans)
+ans)Eager Loading
 
 15. which has an application logic that controls the web interface view
 ans)
 
 16..........is used to organize application modules into cohesive blocks with related functionality
-ans)
+ans)Browser Module
 
 17......is a syntax for string interpolation
-ans)
+ans){{}}
 
 18. ............ is used to get and save data to promises and observables
-ans)
+ans)guard
 
 19. ..........is used to link the components and the template
-ans)
+ans)templateUrl
 
 20. how routes are defined?
 ans) $routeProvider.when
