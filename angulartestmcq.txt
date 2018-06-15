@@ -41,7 +41,7 @@ ans)  <img [src]="image.url">
 ans)Eager Loading
 
 15. which has an application logic that controls the web interface view
-ans)
+ans)component
 
 16..........is used to organize application modules into cohesive blocks with related functionality
 ans)Browser Module
@@ -59,10 +59,10 @@ ans)templateUrl
 ans) $routeProvider.when
 
 21. how to know which selector and template are associated with the component
-ans)
+ans)@component
 
 22. where the service  will be registered if we are registering a service to the component
-ans)
+ans)rootApp
 
 23. .........emit event and pass data to container component from child component
 ans)@output
