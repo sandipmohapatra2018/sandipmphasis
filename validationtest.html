@@ -1,0 +1,67 @@
+<!--Validate Data
+The following can be used to track error.
+ $dirty - states that value has been changed.
+ $invalid- states that value entered is invalid.
+ $error- states the exact error
+-->
+
+
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<body>
+<h2><center>Student Registration Page</h2><hr>
+<form ng-app="myApp" ng-controller="validateCtrl"
+name="myForm" action="second" novalidate>
+<p>Username:<br>
+<input type="text" name="user" ng-model="user" required>
+<span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+<span ng-show="myForm.user.$error.required">Username is required.</span>
+</span>
+</p>
+
+<p>Phone no:<br>
+<input type="number" name="phone" ng-model="phone" required>
+<span style="color:red" ng-show="myForm.phone.$dirty && myForm.phone.$invalid">
+<span ng-show="myForm.phone.$error.required">Phone no is required.</span>
+</span>
+</p>
+
+<p>Date of Birth:<br>
+<input type="date" name="dob" ng-model="dob" required>
+<span style="color:red" ng-show="myForm.dob.$dirty && myForm.dob.$invalid">
+<span ng-show="myForm.dob.$error.required">Date of Birth is required.</span>
+</span>
+</p>
+
+<p>Password:<br>
+<input type="password" name="pass" ng-model="pass" required>
+<span style="color:red" ng-show="myForm.pass.$dirty && myForm.pass.$invalid">
+<span ng-show="myForm.pass.$error.required">Password is required.</span>
+</span>
+</p>
+
+<p>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span></p><p>
+
+<input type="submit"
+ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
+myForm.email.$dirty && myForm.email.$invalid||myForm.phone.$dirty && myForm.phone.$invalid">
+</p></form><script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.user = 'amit';
+    $scope.email = 'amitkumar@gmail.com';
+ $scope.phone = 7766554433;
+$scope.dob='2016-08-16';
+$scope.pass='pass';
+});
+</script></body></html>
+
+
+
+
