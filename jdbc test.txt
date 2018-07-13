@@ -124,7 +124,7 @@ Native-API driver
 Network Protocol driver	
 Thin driver	
 all of the above 		
-choice 4
+choice 5
 
 19)What are the steps to connect to the database in java	
 Registering the driver class	
@@ -132,7 +132,7 @@ Creating connection
 Creating statement	
 Executing queries	
 all of the above 		
-choice 4
+choice 5
 
 20)What are the JDBC API components	
 Connection	
@@ -140,14 +140,14 @@ Statement
 PreparedStatement	
 ResultSet	
 all of the above 		
-choice 4
+choice 5
 
 21)What are the classes in JDBC API	
 Blob	
 Clob	
 Types	
 all of the above 		
-choice 4
+choice 3
 
 22)IBM DB2,oracle sybas,informax.....
 ans :- native api 
@@ -168,7 +168,7 @@ ans :- type 3
 ans:- real
 
 29)isSearchable(int column) returns -----------------
-ans :- 
+ans :- binary values
 
 30)ResultSet object can be moved in forward direction and can be updatable 
 ans :- false
