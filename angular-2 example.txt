@@ -1,3 +1,43 @@
+import { Component } from '@angular/core';
+
+@Component 
+({
+selector: 'my-app',
+
+template: `<form>
+
+<table>
+
+<tr><td><label>Product ID:</label><td>
+<input type="text" name="pid" size=20 /><br /></tr>
+
+<tr><td><label>Product Name:</label><td>
+<input type="text" name="pname" size=20 /><br /></tr>
+
+<tr><td><label>Product Unit:</label><td>
+<input type="text" name="punit" size=20 /><br /></tr>
+
+<tr><td><label>Product Price:</label><td>
+<input type="text" name="pprice" size=20 /><br /></tr>
+
+<tr><td><td>
+<input type="submit" value="submit" /><br /></tr>
+</table>
+</form>`,
+})
+
+
+
+
+
+export class AppComponent 
+{
+  
+}
+
+
+
+------------------------------------------------------
 app.component.ts
 ------------------------------------
 import {Component} from '@angular/core';
@@ -69,36 +109,28 @@ example 3:
 multiplier.pipe.ts
 ------------------------
 import {Pipe,PipeTransform} from '@angular/core';
-
 @Pipe({name: 'Multiplier'})
-
 export class Multiplierpipe implements PipeTransform
 {
     transform(value:number, multiply: string):number
     {
         let mul = parseFloat(multiply);
-        return mul * value
-    }
-}
+        return mul * value    }}
 -----------------------------------------------------------------
 import {Component} from '@angular/core';
-
 @Component ({
-
     selector :'my-app',
     template:` 
     <p> Multiply {{5| Multiplier :20}}<p><br />
     <p> Multiply {{4| Multiplier :25}}<p><br />
     <p> Multiply {{3| Multiplier :22}}<p><br />
-    <p> Multiply {{2| Multiplier :24}}<p><br />
-    
-    `
-})
-
+    <p> Multiply {{2| Multiplier :24}}<p><br /> `})
 export class AppComponent
-{
-    
-}
+{}
+
+
+
+
 ------------------------------------------------------------------
 Routing :-
 --------------------------
