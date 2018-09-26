@@ -1,0 +1,312 @@
+spring mvc:-
+---------------
+Example 1:
+-----------------------
+1)create a request page:-
+index.jsp
+--------------
+<a href="hello.html">click</a>
+---------------------------------------------------------------
+2)creating the controller
+----------------------------------------
+@Controller :-This is used to mark this class as controller.
+
+@Requestmapping :- this annotation is used to map the class with the specific name.
+
+----------------------------------------------------------
+Hellocontroller.java
+--------------------------------
+import org.springframework.sterotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class Hellocontroller
+{
+@Requestmapping("/hello")
+
+public ModelAndView helloWorld()
+{
+String message="Welcome to spring MVC";
+return new ModelAndView("Jsppage","message",message);
+}
+}
+----------------------------------------------------------------------------------------------------
+web.xml
+----------------------
+<servlet>
+<servlet-name>spring</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>spring</servlet-name>
+<url-pattern>*.html</url-pattern>
+</servlet-mapping>
+
+------------------------------------------------------------------------------
+spring-servlet.xml
+------------------------------
+<beans>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/	WEB-INF/jsp/" />
+<property name="suffix" value=".jsp"/>
+</bean>
+</beans>
+
+-------------------------------------------------------------------------------------------
+Jsppage.jsp
+-------------------------
+Message  is:${message}
+------------------------------------------------------------------------
+
+
+Example 2:
+-----------------------
+1)create a request page:-
+index.jsp
+--------------
+<a href="hello.html">click</a>
+<a href="welcome.html">click here</a>
+---------------------------------------------------------------
+2)creating the controller
+----------------------------------------
+@Controller :-This is used to mark this class as controller.
+
+@Requestmapping :- this annotation is used to map the class with the specific name.
+
+----------------------------------------------------------
+Hellocontroller.java
+--------------------------------
+import org.springframework.sterotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class Hellocontroller
+{
+@Requestmapping("/hello")
+
+public ModelAndView helloWorld()
+{
+String message="Welcome to spring MVC";
+return new ModelAndView("Jsppage","message",message);
+}
+}
+----------------------------------------------------------------------------------------------------
+Welcomecontroller.java
+--------------------------------
+import org.springframework.sterotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class Hellocontroller
+{
+@Requestmapping("/welcome")
+
+public ModelAndView helloWorld()
+{
+String message="Welcome to spring MVC second controller";
+return new ModelAndView("welcomejsppage","message",message);
+}
+}
+----------------------------------------------------------------------------------------------------
+
+web.xml
+----------------------
+<servlet>
+<servlet-name>spring</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>spring</servlet-name>
+<url-pattern>*.html</url-pattern>
+</servlet-mapping>
+
+------------------------------------------------------------------------------
+spring-servlet.xml
+------------------------------
+<beans>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/	WEB-INF/jsp/" />
+<property name="suffix" value=".jsp"/>
+</bean>
+</beans>
+
+-------------------------------------------------------------------------------------------
+Jsppage.jsp
+-------------------------
+Message  is:${message}
+------------------------------------------------------------------------
+
+welcomejsppage.jsp
+-------------------------
+Message  is:${message}
+------------------------------------------------------------------------
+
+
+
+Example 3
+-------------------------------
+1)create a request page:-
+index.jsp
+--------------
+<form action="hello.html" method="post">
+<table>
+<tr><td>Enter your name<td><input type=text name=t1 size=20 required></tr>
+<tr><td>Enter your password<td><input type=password name=t2 size=20 required></tr>
+<tr><td>Enter your emailid<td><input type=text name=t3 size=20 required></tr>
+<tr><td>Enter your phone no<td><input type=number name=t4 size=20></tr>
+<tr><td><td><input type=submit value=submit></tr>
+</table>
+</form>
+---------------------------------------------------------------
+2)creating the controller
+----------------------------------------
+@Controller :-This is used to mark this class as controller.
+
+@Requestmapping :- this annotation is used to map the class with the specific name.
+
+----------------------------------------------------------
+Hellocontroller.java
+--------------------------------
+import javax.servlet.http.*;
+import org.springframework.sterotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class Hellocontroller
+{
+@Requestmapping("/hello")
+
+public ModelAndView helloWorld(HttpServletRequest req,HttpServletResponse res)
+{
+String name=req.getParameter("t1");
+String password=req.getParameter("t2");
+String emailid=req.getParameter("t3");
+String phoneno=req.getParameter("t4");
+
+String message="The entered details are "+name+"  "+password+"  "+emailid+"  "+phoneno;
+
+return new ModelAndView("Jsppage","message",message);
+}
+}
+----------------------------------------------------------------------------------------------------
+web.xml
+----------------------
+<servlet>
+<servlet-name>spring</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>spring</servlet-name>
+<url-pattern>*.html</url-pattern>
+</servlet-mapping>
+
+------------------------------------------------------------------------------
+spring-servlet.xml
+------------------------------
+<beans>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/	WEB-INF/jsp/" />
+<property name="suffix" value=".jsp"/>
+</bean>
+</beans>
+
+-------------------------------------------------------------------------------------------
+Jsppage.jsp
+-------------------------
+Message  is:${message}
+------------------------------------------------------------------------
+Example-4
+---------------------------------------------------------
+Multiple view with single controller
+---------------------------------------------------------
+view 
+----------------
+index.html
+------------------
+<a href="hello.html">Click Here</a>
+<a href="welcome.html">Click Here</a>
+--------------------------------------------------------------
+controller
+-------------------------
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HelloController
+{
+@RequestMapping("/hello")
+public ModelAndView helloWorld()
+{
+String message="Hello Spring MVC ";
+return new ModelAndView("Jsppage","message1",message);
+}
+@RequestMapping("/welcome")
+public ModelAndView welcomeWorld()
+{
+String message="Hello welcome to Spring MVC ";
+return new ModelAndView("Jsppage1","message2",message);
+}
+
+-------------------------------------------
+output :-
+-----------------------
+Jsppage.jsp
+
+Message is :${message1}
+
+-------------------------------------------------
+Jsppage1.jsp
+
+Message is :${message2}
+-----------------------------------------------------------
+web.xml
+----------------------
+<servlet>
+<servlet-name>spring</servlet-name>
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>spring</servlet-name>
+<url-pattern>*.html</url-pattern>
+</servlet-mapping>
+
+------------------------------------------------------------------------------
+spring-servlet.xml
+------------------------------
+<beans>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/	WEB-INF/jsp/" />
+<property name="suffix" value=".jsp"/>
+</bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
